@@ -1,0 +1,25 @@
+CREATE TABLE `qp_table` (
+  `ID` int(100) NOT NULL,
+  `refID` varchar(100) NOT NULL,
+  `Fname` varchar(100) NOT NULL,
+  `Lname` varchar(100) NOT NULL,
+  `Mname` varchar(100) NOT NULL,
+  `Email` varchar(100) NOT NULL,
+  `Register_voter` varchar(30) NOT NULL,
+  `Address` varchar(100) NOT NULL,
+  `BOD` date NOT NULL,
+  `Contact` int(100) NOT NULL,
+  `Gender` varchar(100) NOT NULL,
+  `Age` varchar(30) NOT NULL,
+  `Status` varchar(100) NOT NULL,
+  `Request_date` datetime NOT NULL,
+  `img_type` varchar(30) NOT NULL,
+  `Request_Approved_date` datetime NOT NULL,
+  `Request_Claimed_date` datetime NOT NULL,
+  `SetClaim` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+ALTER TABLE `qp_table` ADD PRIMARY KEY (`ID`);
+ALTER TABLE `qp_table` MODIFY `ID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24 ;
+
+
+CREATE TABLE `masterlist_table` ( `ID` int(100) NOT NULL, `Fname` varchar(100) NOT NULL, `Lname` varchar(100) NOT NULL, `Mname` varchar(100) NOT NULL, `Email` varchar(100) NOT NULL, `Register_voter` varchar(30) NOT NULL, `Address` varchar(100) NOT NULL, `BOD` date NOT NULL, `Contact` int(100) NOT NULL, `Gender` varchar(100) NOT NULL, `Age` varchar(30) NOT NULL ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4

@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Data Selected</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+
+
+
+<body>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__ball"></div>
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box" style="color: #000">
+                        <h4>Client Data</h4>
+                        <h2 id="refID">ID number</h2>
+                        
+                      
+                        Fname : <span id="Fname"></span><br> 
+						Lname : <span id="Lname"></span><br> 
+						Mname : <span id="Mname"></span><br> 
+						Email : <span id="Email"></span><br> 
+						Address : <span id="Address"></span><br> 
+						BOD : <span id="BOD"></span><br> 
+						Contact : <span id="Contact"></span><br> 
+						Gender : <span id="Gender"></span><br> 
+						Age : <span id="Age"></span><br> 
+						Status : <span id="Status"></span><br> 
+						Request_date : <span id="Request_date"></span><br> 
+						img_type : <span id="img_type"></span><br> 
+						
+						imgDIR : <span id="dir_img"></span><br> 
+
+
+					
+						
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-md-6">
+                    <div class="post-media wow fadeIn">
+                       <div class="post-media wow fadeIn">
+					  
+					  <img src="" alt="" class="img-responsive img-rounded">
+                       		
+                    </div><!-- end media -->
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+
+            <hr class="hr1"> 
+		
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+	
+	
+	
+
+   <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">General Ethics</a> Design By : 
+					<a href="Benj Design">Group 4</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/hoverdir.js"></script>    
+
+</body>
+
+
+
+
+<script>
+ //displaying the value from local storage to another page by their respective Ids
+	document.getElementById("refID").value = localStorage.getItem("LS_refID",refID);
+	document.getElementById("Fname").value = localStorage.getItem("LS_Fname",Fname);
+	document.getElementById("Lname").value = localStorage.getItem("LS_Lname",Lname);
+	document.getElementById("Mname").value = localStorage.getItem("LS_Mname",Mname);
+	document.getElementById("Email").value  localStorage.getItem("LS_Email",Email);
+	document.getElementById("Address").value = localStorage.getItem("LS_Address",Address);
+	document.getElementById("BOD").value = localStorage.getItem("LS_BOD",BOD);
+	document.getElementById("Contact").value = localStorage.getItem("LS_Contact",Contact);
+	document.getElementById("Gender").value = localStorage.getItem("LS_Gender",Gender);
+	document.getElementById("Age").value = localStorage.getItem("LS_Age",Age);
+	document.getElementById("Status").value = localStorage.getItem("LS_Status",Status);
+	document.getElementById("Request_date").value = localStorage.getItem("LS_Request_date",Request_date);
+	document.getElementById("img_type").value = localStorage.getItem("LS_img_type",img_type);
+	
+	alert(document.getElementById("img_type").value); 
+</script>
+
+
+	
+
+
+</html>
